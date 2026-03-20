@@ -20,7 +20,7 @@ engine.setProperty('voice', voices[1].id)
     
 def speak(text):
     engine.say(text)
-    print(name_assistant + " : "  +  text)
+    print(name_assistant + " : "  + text)
     engine.runAndWait() 
 
 
