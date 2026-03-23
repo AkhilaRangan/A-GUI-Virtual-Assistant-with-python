@@ -50,9 +50,9 @@ def get_audio():
     with sr.Microphone() as source: 
 
         print("Listening") 
-        playsound("assistant_on.wav")
+        playsound("assistant_on .wav")
         audio = r.listen(source, phrase_time_limit = 3) 
-        playsound("assistant_off.wav")
+        playsound("assistant_off .wav")
         print("Stop.") 
         
     try: 
@@ -249,7 +249,7 @@ def change_name_window():
       settings_screen = Toplevel(screen)
       settings_screen.title("Settings")
       settings_screen.geometry("300x300")
-      settings_screen.iconbitmap('app_icon.ico')
+      settings_screen.iconbitmap('app_icon .ico')
 
       
       name = StringVar()
@@ -276,7 +276,7 @@ def info():
 
   info_screen = Toplevel(screen)
   info_screen.title("Info")
-  info_screen.iconbitmap('app_icon.ico')
+  info_screen.iconbitmap('app_icon .ico')
 
   creator_label = Label(info_screen,text = "Created by Abhhi Sannayya")
   creator_label.pack()
@@ -295,7 +295,7 @@ def wikipedia_screen(text):
 
   wikipedia_screen = Toplevel(screen)
   wikipedia_screen.title(text)
-  wikipedia_screen.iconbitmap('app_icon.ico')
+  wikipedia_screen.iconbitmap('app_icon .ico')
 
   message = Message(wikipedia_screen, text= text)
   message.pack()
@@ -308,14 +308,14 @@ def main_screen():
       screen = Tk()
       screen.title(name_assistant)
       screen.geometry("100x250")
-      screen.iconbitmap('app_icon.ico')
+      screen.iconbitmap('app_icon .ico')
 
 
       name_label = Label(text = name_assistant,width = 300, bg = "black", fg="white", font = ("Calibri", 13))
       name_label.pack()
 
 
-      microphone_photo = PhotoImage(file = "assistant_logo.png")
+      microphone_photo = PhotoImage(file = "assistant_logo .png")
       microphone_button = Button(image=microphone_photo, command = Process_audio)
       microphone_button.pack(pady=10)
 
